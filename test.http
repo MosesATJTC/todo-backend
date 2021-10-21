@@ -1,0 +1,21 @@
+@contentType = application/json
+
+POST http://localhost:4200/todo HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+    "title":"heycooooool90" 
+} 
+###
+GET http://localhost:4200/todo HTTP/1.1
+###
+GET http://localhost:4200/todo/{place the id here and remove curly braces} HTTP/1.1
+###
+DELETE http://localhost:4200/todo/{place the id here and remove curly braces} HTTP/1.1
+###
+PUT http://localhost:4200/todo/{place the id here and remove curly braces}  HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+    "title":"cool"
+}
